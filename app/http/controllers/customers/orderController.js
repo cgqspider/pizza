@@ -1,6 +1,6 @@
 const Order = require('../../../models/order')
 const moment = require('moment')
-const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY)
+const stripe = require('stripe')("sk_test_51HMebpG5msz08poeMg3j4kxIETAUGYzs4krpCp7Y5OQDghsnpTZAR6caHi5YXk0hua9rd0qfS4BlX3MNNjwOdx3J00jlpmTyQG")
 function orderController () {
     return {
         store(req, res) {
